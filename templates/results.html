@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <meta charset="UTF-8">
+    <title>HoloSearch</title>
+</head>
+<body>
+    <img src="{{ url_for('static',filename='images/korone.jpg') }}"<br>
+    <h1>HoloSearch</h1>
+    <form method="Post">
+        <p>Enter your query below</p>
+        <input name="u">
+        <input type="submit">
+    <h2>Here are the top 10 results for "{{query}}"</h2>
+    <p>It took {{time}} ms to retrieve these URLs</p>
+    {% for url in urls %}
+        <a href={{url.url}}> {{url.url}} </a><br>
+    {% endfor %}
+</body>
+</html>
