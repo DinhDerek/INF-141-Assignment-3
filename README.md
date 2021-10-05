@@ -1,6 +1,6 @@
 # HoloSearch
 
-HoloSearch is our implementation of a search engine.
+HoloSearch is our implementation of a search engine.  Developed by Derek Dinh and Tung Nguyen
 
 ## How it works
 There are three main parts to the search engine: indexer.py, merge.py, and search.py
