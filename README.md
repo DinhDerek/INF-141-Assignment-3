@@ -15,7 +15,7 @@ search.py:
 search() takes the query as a string and seeks index.txt to retrieve lists of postings.  The tf-idf is computed for the query and cosine similarity is used to rank the top 10 URLs for the whole query.
 
 site.py():
-This is the amin file that is run and if an inverted index has not been created then site.py will automatically call index() and merge() from indexer.py and merge.py respectively.  It retrieves results using search() and displays them to the site.
+This is the main file that is run and if an inverted index has not been created then site.py will automatically call index() and merge() from indexer.py and merge.py respectively.  It retrieves results using search() and displays them to the site.
 
 ## Usage
 Run the site.py file with the following command
